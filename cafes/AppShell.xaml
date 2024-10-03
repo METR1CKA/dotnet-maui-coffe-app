@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="cafes.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:cafes.Views"
+    Shell.FlyoutBehavior="Disabled"
+    Title="Cafes">
+
+    <TabBar Shell.TabBarBackgroundColor="Transparent"
+            Shell.TabBarTitleColor="#ff2d00"
+            Shell.TabBarUnselectedColor="DarkGray"
+            Shell.TabBarForegroundColor="#ff2d00">
+        <Tab Title="Inicio"
+             Icon="home32px.png">
+            <ShellContent
+                ContentTemplate="{DataTemplate local:Inicio}"/>
+        </Tab>
+        <Tab Title="Cafes"
+             Icon="taza32px.png">
+            <ShellContent
+                ContentTemplate="{DataTemplate local:Cafes}"/>
+        </Tab>
+        <Tab Title="Perfil"
+             Icon="perfil32px.png">
+            <ShellContent
+                ContentTemplate="{DataTemplate local:Cuenta}"/>
+        </Tab>
+    </TabBar>
+
+</Shell>

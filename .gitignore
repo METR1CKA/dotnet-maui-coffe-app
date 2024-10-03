@@ -1,0 +1,38 @@
+# Visual Studio y Visual Studio Code
+.vscode/
+.vs/
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# Archivos y carpetas generados por .NET
+bin/
+obj/
+Debug/
+Release/
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
+*.csproj.user
+*.app
+*.ipa
+*.apk
+*.aab
+project.lock.json
+project.fragment.lock.json
+
+# Archivos generados por MAUI
+**/platforms/*
+*.db
+*.app
+
+# MacOS
+.DS_Store
+
+# Configuración de Git
+/.idea/
+*.lock.json
+*.sln.iml
