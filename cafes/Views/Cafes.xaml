@@ -4,9 +4,320 @@
              x:Class="cafes.Views.Cafes"
              Title="Cafes">
     <VerticalStackLayout>
-        <Label
-            Text="Welcome to .NET MAUI Coffes!"
-            VerticalOptions="Center"
-            HorizontalOptions="Center"/>
+        <ScrollView>
+            <Grid HorizontalOptions="FillAndExpand"
+                  VerticalOptions="FillAndExpand"
+                  Margin="15,0,15,0"
+                  RowSpacing="20"
+                  ColumnSpacing="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50*"/>
+                    <ColumnDefinition Width="50*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Primera fila -->
+                <Grid Grid.Row="0"
+                      Grid.Column="0"
+                      HorizontalOptions="FillAndExpand"
+                      Padding="2"
+                      RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Border Grid.Row="0"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="FillAndExpand"
+                            HeightRequest="120"
+                            WidthRequest="125"
+                            StrokeThickness="0.5"
+                            Stroke="#202020"
+                            Background="{AppThemeBinding Light=White, Dark=#202020}">
+                        <Image HorizontalOptions="FillAndExpand"
+                               VerticalOptions="FillAndExpand"
+                               Source="coffe_1.jpg"
+                               Aspect="Fill"
+                               HeightRequest="120"/>
+                    </Border>
+                    <Label Grid.Row="1"
+                           Text="Coffe 1"
+                           HorizontalTextAlignment="Center"
+                           HorizontalOptions="CenterAndExpand"/>
+                </Grid>
+
+                <Grid Grid.Row="0"
+                      Grid.Column="1"
+                      HorizontalOptions="FillAndExpand"
+                      Padding="2"
+                      RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Border Grid.Row="0"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="FillAndExpand"
+                            HeightRequest="120"
+                            WidthRequest="125"
+                            StrokeThickness="0.5"
+                            Stroke="#202020"
+                            Background="{AppThemeBinding Light=White, Dark=#202020}">
+                        <Image HorizontalOptions="FillAndExpand"
+                               VerticalOptions="FillAndExpand"
+                               Source="coffe_2.jpg"
+                               Aspect="Fill"
+                               HeightRequest="120"/>
+                    </Border>
+                    <Label Grid.Row="1"
+                           Text="Coffe 2"
+                           HorizontalTextAlignment="Center"
+                           HorizontalOptions="CenterAndExpand"/>
+                </Grid>
+
+                <!-- Segunda fila -->
+                <Grid Grid.Row="1"
+                      Grid.Column="0"
+                      HorizontalOptions="FillAndExpand"
+                      Padding="2"
+                      RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Border Grid.Row="0"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="FillAndExpand"
+                            HeightRequest="120"
+                            WidthRequest="125"
+                            StrokeThickness="0.5"
+                            Stroke="#202020"
+                            Background="{AppThemeBinding Light=White, Dark=#202020}">
+                        <Image HorizontalOptions="FillAndExpand"
+                               VerticalOptions="FillAndExpand"
+                               Source="coffe_3.jpg"
+                               Aspect="Fill"
+                               HeightRequest="120"/>
+                    </Border>
+                    <Label Grid.Row="1"
+                           Text="Coffe 3"
+                           HorizontalTextAlignment="Center"
+                           HorizontalOptions="CenterAndExpand"/>
+                </Grid>
+
+                <Grid Grid.Row="1"
+                      Grid.Column="1"
+                      HorizontalOptions="FillAndExpand"
+                      Padding="2"
+                      RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Border Grid.Row="0"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="FillAndExpand"
+                            HeightRequest="120"
+                            WidthRequest="125"
+                            StrokeThickness="0.5"
+                            Stroke="#202020"
+                            Background="{AppThemeBinding Light=White, Dark=#202020}">
+                        <Image HorizontalOptions="FillAndExpand"
+                               VerticalOptions="FillAndExpand"
+                               Source="coffe_4.jpg"
+                               Aspect="Fill"
+                               HeightRequest="120"/>
+                    </Border>
+                    <Label Grid.Row="1"
+                           Text="Coffe 4"
+                           HorizontalTextAlignment="Center"
+                           HorizontalOptions="CenterAndExpand"/>
+                </Grid>
+
+                <!-- Tercera fila -->
+                <Grid Grid.Row="2"
+                      Grid.Column="0"
+                      HorizontalOptions="FillAndExpand"
+                      Padding="2"
+                      RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Border Grid.Row="0"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="FillAndExpand"
+                            HeightRequest="120"
+                            WidthRequest="125"
+                            StrokeThickness="0.5"
+                            Stroke="#202020"
+                            Background="{AppThemeBinding Light=White, Dark=#202020}">
+                        <Image HorizontalOptions="FillAndExpand"
+                               VerticalOptions="FillAndExpand"
+                               Source="coffe_5.jpg"
+                               Aspect="Fill"
+                               HeightRequest="120"/>
+                    </Border>
+                    <Label Grid.Row="1"
+                           Text="Coffe 5"
+                           HorizontalTextAlignment="Center"
+                           HorizontalOptions="CenterAndExpand"/>
+                </Grid>
+
+                <Grid Grid.Row="2"
+                      Grid.Column="1"
+                      HorizontalOptions="FillAndExpand"
+                      Padding="2"
+                      RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Border Grid.Row="0"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="FillAndExpand"
+                            HeightRequest="120"
+                            WidthRequest="125"
+                            StrokeThickness="0.5"
+                            Stroke="#202020"
+                            Background="{AppThemeBinding Light=White, Dark=#202020}">
+                        <Image HorizontalOptions="FillAndExpand"
+                               VerticalOptions="FillAndExpand"
+                               Source="coffe_6.jpg"
+                               Aspect="Fill"
+                               HeightRequest="120"/>
+                    </Border>
+                    <Label Grid.Row="1"
+                           Text="Coffe 6"
+                           HorizontalTextAlignment="Center"
+                           HorizontalOptions="CenterAndExpand"/>
+                </Grid>
+
+                <!-- Cuarta fila -->
+                <Grid Grid.Row="3"
+                      Grid.Column="0"
+                      HorizontalOptions="FillAndExpand"
+                      Padding="2"
+                      RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Border Grid.Row="0"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="FillAndExpand"
+                            HeightRequest="120"
+                            WidthRequest="125"
+                            StrokeThickness="0.5"
+                            Stroke="#202020"
+                            Background="{AppThemeBinding Light=White, Dark=#202020}">
+                        <Image HorizontalOptions="FillAndExpand"
+                               VerticalOptions="FillAndExpand"
+                               Source="coffe_7.jpg"
+                               Aspect="Fill"
+                               HeightRequest="120"/>
+                    </Border>
+                    <Label Grid.Row="1"
+                           Text="Coffe 7"
+                           HorizontalTextAlignment="Center"
+                           HorizontalOptions="CenterAndExpand"/>
+                </Grid>
+
+                <Grid Grid.Row="3"
+                      Grid.Column="1"
+                      HorizontalOptions="FillAndExpand"
+                      Padding="2"
+                      RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Border Grid.Row="0"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="FillAndExpand"
+                            HeightRequest="120"
+                            WidthRequest="125"
+                            StrokeThickness="0.5"
+                            Stroke="#202020"
+                            Background="{AppThemeBinding Light=White, Dark=#202020}">
+                        <Image HorizontalOptions="FillAndExpand"
+                               VerticalOptions="FillAndExpand"
+                               Source="coffe_8.jpg"
+                               Aspect="Fill"
+                               HeightRequest="120"/>
+                    </Border>
+                    <Label Grid.Row="1"
+                           Text="Coffe 8"
+                           HorizontalTextAlignment="Center"
+                           HorizontalOptions="CenterAndExpand"/>
+                </Grid>
+
+                <!-- Quinta fila -->
+                <Grid Grid.Row="4"
+                      Grid.Column="0"
+                      HorizontalOptions="FillAndExpand"
+                      Padding="2"
+                      RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Border Grid.Row="0"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="FillAndExpand"
+                            HeightRequest="120"
+                            WidthRequest="125"
+                            StrokeThickness="0.5"
+                            Stroke="#202020"
+                            Background="{AppThemeBinding Light=White, Dark=#202020}">
+                        <Image HorizontalOptions="FillAndExpand"
+                               VerticalOptions="FillAndExpand"
+                               Source="coffe_9.jpg"
+                               Aspect="Fill"
+                               HeightRequest="120"/>
+                    </Border>
+                    <Label Grid.Row="1"
+                           Text="Coffe 9"
+                           HorizontalTextAlignment="Center"
+                           HorizontalOptions="CenterAndExpand"/>
+                </Grid>
+
+                <Grid Grid.Row="4"
+                      Grid.Column="1"
+                      HorizontalOptions="FillAndExpand"
+                      Padding="2"
+                      RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Border Grid.Row="0"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="FillAndExpand"
+                            HeightRequest="120"
+                            WidthRequest="125"
+                            StrokeThickness="0.5"
+                            Stroke="#202020"
+                            Background="{AppThemeBinding Light=White, Dark=#202020}">
+                        <Image HorizontalOptions="FillAndExpand"
+                               VerticalOptions="FillAndExpand"
+                               Source="coffe_10.png"
+                               Aspect="Fill"
+                               HeightRequest="120"/>
+                    </Border>
+                    <Label Grid.Row="1"
+                           Text="Coffe 10"
+                           HorizontalTextAlignment="Center"
+                           HorizontalOptions="CenterAndExpand"/>
+                </Grid>
+            </Grid>
+        </ScrollView>
     </VerticalStackLayout>
 </ContentPage>
