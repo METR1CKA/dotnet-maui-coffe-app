@@ -3,10 +3,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="cafes.Views.Cuenta"
              Title="Cuenta">
-    <VerticalStackLayout>
+
+    <VerticalStackLayout Padding="20"
+                         Spacing="15">
         <Label
-            Text="Welcome to .NET MAUI Profile!"
-            VerticalOptions="Center"
+            Text="Mi Cuenta"
+            FontSize="Large"
+            FontAttributes="Bold"
             HorizontalOptions="Center"/>
+
+        <Frame BorderColor="LightGray"
+               CornerRadius="10"
+               Padding="15"
+               HasShadow="True">
+            <VerticalStackLayout Spacing="10">
+                <Label Text="Nombre: Fernando Salazar Manzano"
+                       FontAttributes="Bold"/>
+                <Label Text="Clase: 10B"/>
+                <Label Text="Carrera: Ingeniería en el Desarrollo y Gestión de Software"/>
+            </VerticalStackLayout>
+        </Frame>
     </VerticalStackLayout>
 </ContentPage>

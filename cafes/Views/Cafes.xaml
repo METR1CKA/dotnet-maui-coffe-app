@@ -288,35 +288,6 @@
                            HorizontalTextAlignment="Center"
                            HorizontalOptions="CenterAndExpand"/>
                 </Grid>
-
-                <Grid Grid.Row="4"
-                      Grid.Column="1"
-                      HorizontalOptions="FillAndExpand"
-                      Padding="2"
-                      RowSpacing="0">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="2*"/>
-                        <RowDefinition Height="Auto"/>
-                    </Grid.RowDefinitions>
-                    <Border Grid.Row="0"
-                            HorizontalOptions="FillAndExpand"
-                            VerticalOptions="FillAndExpand"
-                            HeightRequest="120"
-                            WidthRequest="125"
-                            StrokeThickness="0.5"
-                            Stroke="#202020"
-                            Background="{AppThemeBinding Light=White, Dark=#202020}">
-                        <Image HorizontalOptions="FillAndExpand"
-                               VerticalOptions="FillAndExpand"
-                               Source="coffe_10.png"
-                               Aspect="Fill"
-                               HeightRequest="120"/>
-                    </Border>
-                    <Label Grid.Row="1"
-                           Text="Coffe 10"
-                           HorizontalTextAlignment="Center"
-                           HorizontalOptions="CenterAndExpand"/>
-                </Grid>
             </Grid>
         </ScrollView>
     </VerticalStackLayout>
